@@ -24,6 +24,6 @@ function add() {
 }
 
 function removeTask(task) {
-    task.parentNode.remove();
+    task.parentNode.parentNode.remove();
 }
 
