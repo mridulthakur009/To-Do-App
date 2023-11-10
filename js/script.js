@@ -6,7 +6,8 @@ function add() {
         alert("Please enter any task");
     }
     else{
-    document.querySelector(".cardss").innerHTML +=    
+    let data = document.querySelector(".cardss")
+    data.innerHTML +=    
     `
     <div class="card m-3">
       <div class="card-body">
@@ -19,6 +20,7 @@ function add() {
       </div>
     </div>
     `;
+    
     input.value = "";
 }
 }
