@@ -4,7 +4,8 @@
     
 
 .bg6579C8{
-    background: linear-gradient( to bottom, #5D71BF , #bdc9f5  )
+    background: linear-gradient( to bottom, #5D71BF , #bdc9f5  );
+    border-radius: 15px;
 }
 
 .delete{
@@ -14,16 +15,24 @@
     border-radius: 5px;
 }
 
-#text {
+.text {
     text-decoration: none;
   }
   
-  #checkbox:checked ~ #text {
+  .checkbox:checked ~ .text {
     text-decoration: line-through;
   }
 
-
-
-  #checkbox , p{
+  .checkbox , p, h2{
     display: inline;
   }
+
+  .colorE1AA74{
+    background-color: #CCEEBC;
+  }
+
+  .checkbox{
+    height: 20px;
+    width: 20px;
+  }
+  
