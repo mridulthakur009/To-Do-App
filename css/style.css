@@ -1,0 +1,29 @@
+.bgFFFAF0{
+    background-color: #FFFAF0;
+}
+    
+
+.bg6579C8{
+    background: linear-gradient( to bottom, #5D71BF , #bdc9f5  )
+}
+
+.delete{
+    float: right;
+    border: 2px solid red;
+    background-color: rgb(255, 202, 202);
+    border-radius: 5px;
+}
+
+#text {
+    text-decoration: none;
+  }
+  
+  #checkbox:checked ~ #text {
+    text-decoration: line-through;
+  }
+
+
+
+  #checkbox , p{
+    display: inline;
+  }
