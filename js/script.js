@@ -12,7 +12,7 @@ function add() {
       newTask.innerHTML = `
           <div class="card-body">
               <input type="checkbox" class="checkbox">
-              <p class="text"> &nbsp; ${input.value}</p>
+              <p class="text"> ${input.value}</p>
               <label for="checkbox"></label>
               <button class="delete">
                   <i class="fa-solid fa-xmark" style="color: #ff0000;" onclick="removeTask(this.parentNode.parentNode)"></i>
@@ -27,5 +27,5 @@ function add() {
 }
 
 function removeTask(task) {
-  task.remove();
+  task.parentNode.remove();
 }
