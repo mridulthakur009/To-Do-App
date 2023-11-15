@@ -7,7 +7,7 @@ function add() {
       let data = document.querySelector(".cardss");
 
       let newTask = document.createElement("div");
-      newTask.classList.add("card", "m-3");
+      newTask.classList.add("card");
 
       newTask.innerHTML = `
           <div class="card-body">
