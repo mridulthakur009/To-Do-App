@@ -8,7 +8,6 @@
     background-color: #FFFAF0;
 }
     
-
 .bg6579C8{
     background: linear-gradient( to bottom, #5D71BF , #bdc9f5  );
     border-radius: 15px;
@@ -26,6 +25,9 @@
     text-decoration: none;
   }
   
+.card{
+  margin: 30px;
+}  
   .checkbox:checked ~ .text {
     text-decoration: line-through;
   }

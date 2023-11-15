@@ -1,31 +1,31 @@
-
 function add() {
-    let input = document.getElementById("input");
+  let input = document.getElementById("input");
 
-    if (input.value == "") {
-        alert("Please enter any task");
-    }
-    else{
-    let data = document.querySelector(".cardss")
-    data.innerHTML +=    
-    `
-    <div class="card m-3">
-      <div class="card-body">
-       <input type="checkbox" class="checkbox">
-        <p class="text"> &nbsp;
-        ${document.querySelector("#input").value}
-        </p>
-        <label for="checkbox"></label>
-        <button class="delete"><i class="fa-solid fa-xmark" style="color: #ff0000;" onclick="removeTask(this.parentNode)" ></i></button>
-      </div>
-    </div>
-    `;
-    
-    input.value = "";
-}
+  if (input.value == "") {
+      alert("Please enter any task");
+  } else {
+      let data = document.querySelector(".cardss");
+
+      let newTask = document.createElement("div");
+      newTask.classList.add("card", "m-3");
+
+      newTask.innerHTML = `
+          <div class="card-body">
+              <input type="checkbox" class="checkbox">
+              <p class="text"> &nbsp; ${input.value}</p>
+              <label for="checkbox"></label>
+              <button class="delete">
+                  <i class="fa-solid fa-xmark" style="color: #ff0000;" onclick="removeTask(this.parentNode.parentNode)"></i>
+              </button>
+          </div>
+      `;
+
+      data.insertBefore(newTask, data.firstChild);
+
+      input.value = "";
+  }
 }
 
 function removeTask(task) {
-    task.parentNode.parentNode.remove();
+  task.remove();
 }
-
