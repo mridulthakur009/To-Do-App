@@ -1,9 +1,11 @@
 function add() {
   let input = document.getElementById("input");
 
-  if (input.value == "") {
-      alert("Please enter any task");
+  if (input.value == "" || input.value == null) {
+     document.getElementById("inputValidation").innerHTML = " * Enter Task ! ! !" 
+     
   } else {
+    
       let data = document.querySelector(".cardss");
 
       let newTask = document.createElement("div");
@@ -21,11 +23,15 @@ function add() {
       `;
 
       data.insertBefore(newTask, data.firstChild);
-
       input.value = "";
   }
 }
 
 function removeTask(task) {
   task.parentNode.remove();
+}
+
+function removeVal()
+{
+    document.getElementById("inputValidation").innerText = "";
 }

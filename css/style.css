@@ -13,6 +13,19 @@
     border-radius: 15px;
     box-shadow: 0px 0px 45px #a0a0a0;
 }
+#inputValidation{
+  color: rgb(255, 0, 0);
+  display: block;
+  font-size: medium;
+  font-weight: 500;
+  
+}
+h1{
+  
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 15px #a0a0a0;
+}
 
 .delete{
     float: right;
@@ -28,7 +41,10 @@
   }
   
 .card{
-  margin: 10px;
+  margin: 5px;
+  margin-left: 2%;
+  width: 96%;
+  
 }  
   .checkbox:checked ~ .text {
     text-decoration: line-through;
@@ -49,5 +65,7 @@
 
   p{
     vertical-align: top;
+    padding: 15px auto;
+    margin-top: 10px;
   }
   
