@@ -20,6 +20,9 @@
   font-weight: 500;
   
 }
+#input{
+  height: 60px;
+}
 h1{
   
   padding: 10px;
@@ -41,8 +44,8 @@ h1{
   }
   
 .card{
-  margin: 5px auto;
-  width: 90%;
+  margin: 7.5px 15px;
+  border-radius: 0px;
   
 }  
   .checkbox:checked ~ .text {
